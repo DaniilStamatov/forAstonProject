@@ -52,8 +52,6 @@ public class UserServiceImpl implements UserService {
         return enteredUser;
     }
 
-
-
     private void validateUser(User user){
         if(user.getLogin().isEmpty() || user.getPassword().isEmpty()){
             throw new ValidationException("Логин и пароль не могут быть пустыми");
